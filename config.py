@@ -11,8 +11,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002442728284"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002400371519"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -31,15 +31,15 @@ APP_ID = int(os.environ.get("APP_ID", "20071888"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "1c4cb9d94b23282abd9ae2a87a521b53")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002225361182"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002320335011"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
 OWNER_ID = int(os.environ.get("OWNER_ID", "8108281129"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "6646")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://Yuki:aloksingh@yuki.biabo.mongodb.net/?retryWrites=true&w=majority")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://Heaven:aloksingh@heaven.cnkz3.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "filesharexbot")
+DB_NAME = os.environ.get("DB_NAME", "Heaven")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -62,9 +62,9 @@ https://dashboard.shareus.io/
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "inshorturl.com")
-# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ca4bc23bac23a1ccd4857d19cd4445eff02405ca")
+# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "2db0df5d72d7cc1c33352097ca4a206f5bc88357")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ca4bc23bac23a1ccd4857d19cd4445eff02405ca")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "2db0df5d72d7cc1c33352097ca4a206f5bc88357")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -93,7 +93,7 @@ PRICE1 = os.environ.get("PRICE1", "50")
 #1 Month
 PRICE2 = os.environ.get("PRICE2", "130")
 #3 Month
-PRICE3 = os.environ.get("PRICE3", "250")
+PRICE3 = os.environ.get("PRICE3", "299")
 #6 Month
 PRICE4 = os.environ.get("PRICE4", "Not Available")
 #1 Year
