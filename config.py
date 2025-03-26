@@ -39,7 +39,7 @@ PORT = os.environ.get("PORT", "6226")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://Heaven:aloksingh@heaven.cnkz3.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "Heaven")
+DB_NAME = os.environ.get("DB_NAME", "Snap")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
