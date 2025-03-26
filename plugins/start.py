@@ -40,7 +40,7 @@ async def start_command(client: Client, message: Message):
             if "verify_" in message.text:
                 _, token = message.text.split("_", 1)
                 if verify_status['verify_token'] != token:
-                    return await message.reply("𝚈𝚘𝚞𝚛 𝚃𝚘𝚔𝚎𝚗 𝙸𝚜 𝙸𝚗𝚟𝚊𝚕𝚒𝚍 𝙾𝚛 𝙴𝚡𝚙𝚒𝚛𝚎𝚍 ⌛. 𝚃𝚛𝚢 𝚊𝚐𝚊𝚒𝚗 𝚋𝚢 𝚌𝚕𝚒𝚌𝚔𝚒𝚗𝚐 /start\n\n𝙸𝚏 𝚃𝚑𝚒𝚜 𝙸𝚜 𝙷𝚊𝚙𝚙𝚎𝚗𝚒𝚗𝚐 𝙰𝚐𝚊𝚒𝚗 𝙰𝚗𝚍 𝙰𝚐𝚊𝚒𝚗 𝚃𝚑𝚊𝚗 𝙲𝚘𝚗𝚝𝚎𝚌𝚝 @Orignal_Owner_bot")
+                    return await message.reply("𝚈𝚘𝚞𝚛 𝚃𝚘𝚔𝚎𝚗 𝙸𝚜 𝙸𝚗𝚟𝚊𝚕𝚒𝚍 𝙾𝚛 𝙴𝚡𝚙𝚒𝚛𝚎𝚍 ⌛. 𝚃𝚛𝚢 𝚊𝚐𝚊𝚒𝚗 𝚋𝚢 𝚌𝚕𝚒𝚌𝚔𝚒𝚗𝚐 /start")
                 await update_verify_status(id, is_verified=True, verified_time=time.time())
                 if verify_status["link"] == "":
                     reply_markup = None
